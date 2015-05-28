@@ -1,0 +1,31 @@
+﻿.section.about {
+  background-image: url("/images/poly-blue.jpg");
+  background-size: cover;
+  padding-top: 0;
+}
+.section.about span {
+  color: #eee;
+}
+.section.about .container {
+  background-color: none;
+  text-shadow: 4px 4px 10px black;
+  padding: 0 30px 40px 30px;
+  font-size: 30px;
+  white-space: normal;
+}
+.section.about .container h1 {
+  font-size: 65px;
+  padding-top: 40px;
+  color: #fff;
+}
+.section.about .container .geek {
+  color: #b3e73e;
+}
+.section.about .container .cat {
+  color: #1ca6e4;
+  white-space: nowrap;
+}
+.section.about .container .dev {
+  color: #ecae11;
+}
+/*# sourceMappingURL=about.css.map */

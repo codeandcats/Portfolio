@@ -1,0 +1,28 @@
+﻿@import "../../colours/colours.less";
+@import "../../dimensions/dimensions.less";
+
+.section {
+
+	&.work-history {
+		//.gradient(darken(@work-history-bg-colour, 10%), @work-history-bg-colour);
+		background: @work-history-bg-colour;
+
+		.container {
+			//background-color: #eee;
+			color: @work-history-text-colour !important;
+		}
+		
+		h1 {
+			color: @work-history-title-colour;
+		}
+
+		.company {
+			font-weight: bold;
+		}
+
+		p a {
+			text-decoration: underline;
+		}
+	}
+
+}

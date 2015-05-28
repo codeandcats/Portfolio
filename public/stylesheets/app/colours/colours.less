@@ -1,0 +1,42 @@
+﻿// Mixins
+.gradient (@startColor, @endColor) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+// Content Sections
+@content-bg-colour: #13152C;
+@content-h1-colour: #3eb3e7;
+@content-text-colour: #eee;
+
+// Skills
+@skills-title-colour: #3eb3e7;//#f1bd39;
+@skills-text-colour: #eee;
+@skills-bg-colour: #13152C;
+
+// Work History
+@work-history-title-colour: #3eb3e7;//#b3e73e;
+@work-history-text-colour: #eee;
+@work-history-bg-colour: #13152C;
+
+// Education
+@education-title-colour: #3eb3e7;
+@education-text-colour: #eee;
+@education-bg-colour: #13152C;
+
+// Contact
+@contact-title-colour: #3eb3e7;//#8065ec;
+@conatct-text-colour: #eee;
+@contact-bg-colour: #13152C;
+
+// Footer
+@footer-bg-colour: black;
+@footer-text-colour: #eee;
+
+// Link
+@link-colour: @content-h1-colour;
+@link-hover-colour: orange;

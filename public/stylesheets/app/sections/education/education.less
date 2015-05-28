@@ -1,0 +1,49 @@
+﻿@import "../../colours/colours.less";
+@import "../../dimensions/dimensions.less";
+
+.section {
+
+	&.education {
+		//.gradient(darken(@education-color, 10%), @education-color);
+		background: @education-bg-colour;
+
+		.container {
+			//background-color: #eee;
+			color: @education-text-colour !important;
+		}
+
+		h1 {
+			color: @education-title-colour;
+		}
+
+		.title {
+			font-weight: bold;
+		}
+
+		.academy {
+			font-weight: bold;
+		}
+
+		.year {
+			margin-left: 5px;
+			font-weight: bold;
+
+			&:before {
+				content: '('
+			}
+
+			&:after {
+				content: ')'
+			}
+		}
+
+		ul {
+			padding-left: 0;
+
+			li {
+				list-style-type: none;
+			}
+		}
+	}
+
+}

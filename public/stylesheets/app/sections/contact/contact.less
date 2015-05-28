@@ -1,0 +1,67 @@
+﻿@import "../../colours/colours.less";
+@import "../../dimensions/dimensions.less";
+
+.section {
+
+	&.contact {
+		//.gradient(@contact-color, darken(@contact-color, 5%));
+		background: @contact-bg-colour;
+
+		.container {
+			//background-color: #eee;
+			padding-bottom: 600px;
+			//color: #eee;
+			//color: black;
+			color: @conatct-text-colour !important;
+
+			h1 {
+				color: @contact-title-colour;
+			}
+
+			.row.links {
+				font-size: 16px;
+				font-weight: bold;
+				padding-left: 0;
+
+				a.contact {
+					color: orange !important;
+					//text-decoration: underline;
+				}
+
+				a.contact:hover {
+					color: orange !important;
+				}
+
+				.col-sm-3 {
+					text-align: left;
+					padding-left: 0;
+					padding-right: 0;
+
+					@media (max-width: @screen-xs-max) {
+						padding-left: 15px;
+					}
+
+					@media (min-width: @screen-xs-max) {
+						text-align: center;
+					}
+				}
+
+				.col-sm-3:first-of-type {
+					@media (min-width: @screen-xs-max) {
+						padding-left: 15px;
+						text-align: left;
+					}
+				}
+
+				.col-sm-3:last-of-type {
+					@media (min-width: @screen-xs-max) {
+						padding-right: 15px;
+						text-align: right;
+					}
+				}
+			}
+
+		}
+	}
+
+}

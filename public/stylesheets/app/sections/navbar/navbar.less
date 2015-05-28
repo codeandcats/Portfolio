@@ -1,0 +1,25 @@
+﻿@import "../../colours/colours.less";
+@import "../../dimensions/dimensions.less";
+
+.navbar {
+
+	a:hover {
+		color: @link-hover-colour !important;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Small devices (tablets, 768px and up) */
+	@media (max-width: @screen-xs-max) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+.navbar-inverse {
+	background-color: #000;
+}

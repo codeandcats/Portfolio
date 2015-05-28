@@ -1,0 +1,51 @@
+﻿@import "../../colours/colours.less";
+@import "../../dimensions/dimensions.less";
+
+.section {
+
+	&.about {
+
+		//.gradient(@hero-gradient-dark, @hero-gradient-light);
+		background-image: url("/images/poly-blue.jpg");
+		background-size: cover;
+
+		span {
+			color: #eee;
+		}
+
+		padding-top: 0;
+
+		.container {
+			//background-color: #444;
+			background-color: none;
+
+			text-shadow: 4px 4px 10px black;
+
+			padding: 0 30px 40px 30px;
+
+			h1 {
+				font-size: 65px;
+				padding-top: 40px;
+				color: #fff;
+			}
+
+			font-size: 30px;
+
+			white-space: normal;
+
+			.geek {
+				color: #b3e73e;
+			}
+
+			.cat {
+				color: #1ca6e4;
+				white-space: nowrap;
+			}
+
+			.dev {
+				color: #ecae11;
+			}
+		}
+	}
+
+}
