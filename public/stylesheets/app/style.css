@@ -1,4 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Ropa+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ropa+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 .navbar {
   /* Small devices (tablets, 768px and up) */
@@ -30,7 +30,7 @@
 .section.about .container {
   background-color: none;
   text-shadow: 4px 4px 10px black;
-  padding: 0 30px 40px 30px;
+  padding: 30px 30px 80px 30px;
   font-size: 30px;
   white-space: normal;
 }
@@ -247,4 +247,3 @@ ul.nav.navbar-nav li.active a {
 .section.footer p {
   color: #eeeeee;
 }
-/*# sourceMappingURL=style.css.map */
