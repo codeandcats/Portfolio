@@ -15,6 +15,7 @@
     "jade": "~1.9.2",
     "less-middleware": "1.0.x",
     "morgan": "~1.5.3",
+    "request": "^2.56.0",
     "serve-favicon": "~2.2.1"
   },
   "devDependencies": {
