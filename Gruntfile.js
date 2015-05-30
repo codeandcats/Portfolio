@@ -24,5 +24,5 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('default', ["less"]);
-	grunt.registerTask('watch', ["watch"]);
+	grunt.registerTask('auto-build', ["watch"]);
 };
