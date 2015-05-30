@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postrestore": "npm install",
-    "postpublish": "grunt",
+    "publish": "grunt",
     "start": "node ./bin/www"
   },
   "dependencies": {
