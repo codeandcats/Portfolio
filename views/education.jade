@@ -2,54 +2,20 @@
 	a.title(name="education")
 		h1 Education
 	ul
-		li
-			h3.title Diploma in Information Technology
-			p
-				span.academy Southern Queensland Institute of TAFE
-				span.year 2001
-				
+		each course in education.tertiary
+			li
+				h3.title #{course.title}
+				p
+					span.academy #{course.academy} 
+					span.year #{course.graduationDate.getFullYear()}
+	
 	a.title(name="certifications")
 		h1 Certifications
-				
-	ul			
-		li
-			h3.title Real Time Web with Node.js
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title Shaping Up With Angular JS
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title Staying Sharp with Angular JS
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title JavaScript Road Trip Part 3
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title JavaScript Road Trip Part 2
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title JavaScript Road Trip Part 1
-			p
-				span.academy Code School
-				span.year 2015
-							
-		li
-			h3.title Building Web Apps with ASP.NET
-			p
-				span.academy Microsoft Virtual Academy
-				span.year 2013
+	
+	ul
+		each course in education.certifications
+			li
+				h3.title #{course.title}
+				p
+					span.academy #{course.academy} 
+					span.year #{course.graduationDate.getFullYear()}
