@@ -4,14 +4,10 @@
 .section {
 
 	&.contact {
-		//.gradient(@contact-color, darken(@contact-color, 5%));
 		background: @contact-bg-colour;
 
 		.container {
-			//background-color: #eee;
 			padding-bottom: 600px;
-			//color: #eee;
-			//color: black;
 			color: @conatct-text-colour !important;
 
 			h1 {
@@ -21,11 +17,11 @@
 			.row.links {
 				font-size: 16px;
 				font-weight: bold;
+				padding-top: 60px; 
 				padding-left: 0;
 
 				a.contact {
 					color: orange !important;
-					//text-decoration: underline;
 				}
 
 				a.contact:hover {
@@ -64,4 +60,16 @@
 		}
 	}
 
+}
+
+.tooltip-inner {
+	font-size: 15px;
+	padding: 15px;
+  	max-width: none !important;
+    background-color: white;
+    color: black;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: white;
 }
