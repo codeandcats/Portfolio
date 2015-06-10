@@ -1,5 +1,5 @@
 ﻿mixin contact(title, className, url, tooltip)
-	.col-sm-3
+	.col-sm-4
 		h3
 			a.contact(class="#{className}", href="#{url}", data-toggle="tooltip", data-placement="top", title="#{tooltip}") #{title}	
 
@@ -14,7 +14,7 @@
 		+contact("Email", "email", "", "")
 		+contact("LinkedIn", "linked-in", "http://au.linkedin.com/in/codeandcats", "codeandcats")
 		+contact("GitHub", "github", "https://github.com/codeandcats", "codeandcats")
-		+contact("Old Blog", "blog", "http://codeandcats.com", "codeandcats.com")
+		//+contact("Old Blog", "blog", "http://codeandcats.com", "codeandcats.com")
 
 script(type='text/javascript').
 	$(function() {
