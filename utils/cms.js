@@ -136,7 +136,8 @@ function getEducationFromPost(post) {
 		academy: post.post_meta && post.post_meta.academy,
 		graduationDate: post.post_meta && post.post_meta.graduationDate ?
 			new Date(post.post_meta.graduationDate) :
-			new Date(200, 1, 1)
+			new Date(200, 1, 1),
+		order: post.post_meta && +post.post_meta.order
 	};
 	
 	return education;
