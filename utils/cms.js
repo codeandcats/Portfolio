@@ -172,6 +172,8 @@ function getJobFromPost(post) {
 		title: post.title,
 		company: company,
 		years: years,
+        yearStarted: yearStarted,
+        yearEnded: yearEnded,
 		description: post.content
 	};
 			
