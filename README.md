@@ -14,7 +14,7 @@ Ben's portfolio site written in Node.js, Express, Jade, Less &amp; Bootstrap.
 ## Running Site
 1. Run:
 	```
-	node bin/www
+	npm start
 	```
 
 2. Browse:
