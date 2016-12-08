@@ -149,7 +149,7 @@ function getWorkHistory(posts) {
 		.From(posts)
 		.Where(function(post) { return getPostCategory(post) == "Work History"; })
 		.Select(function(post) { return getJobFromPost(post); })
-		.OrderByDescending(function(job) { return job.yearStarted; })
+		.OrderByDescending(function(job) { return job.yearEnded || Number.MAX_VALUE; })
 		.ToArray();
 	
 	return result;
@@ -158,7 +158,7 @@ function getWorkHistory(posts) {
 function getJobFromPost(post) {
 	
 	var company = post.post_meta && post.post_meta.company;
-			
+	
 	var yearStarted = post.post_meta && post.post_meta.yearStarted;
 	var yearEnded = post.post_meta && post.post_meta.yearEnded;
 	var years =
