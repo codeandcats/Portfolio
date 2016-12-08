@@ -29,3 +29,6 @@ node_modules
 # Less output
 public/stylesheets/app/*.css
 public/stylesheets/app/*.map
+
+# VS Code
+.vscode/symbols.json
