@@ -6,16 +6,19 @@
 			li
 				h3.title #{course.title}
 				p
-					span.academy #{course.academy} 
+					span.academy #{course.academy}
 					span.year #{course.graduationDate.getFullYear()}
-	
+
 	a.title(name="certifications")
 		h1 Certifications
-	
-	ul
-		each course in education.certifications
-			li
-				h3.title #{course.title}
-				p
-					span.academy #{course.academy} 
-					span.year #{course.graduationDate.getFullYear()}
+
+	.row
+		each column in education.certifications.columns
+			.col-md-6
+				ul
+					each course in column
+						li
+							h3.title #{course.title}
+							p
+								span.academy #{course.academy}
+								span.year #{course.graduationDate.getFullYear()}
