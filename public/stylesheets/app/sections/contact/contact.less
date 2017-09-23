@@ -6,60 +6,58 @@
 	&.contact {
 		background: @contact-bg-colour;
 
-		.container {
-			padding-bottom: 600px;
-			color: @conatct-text-colour !important;
+		h1 {
+			color: @contact-title-colour;
+		}
 
-			h1 {
-				color: @contact-title-colour;
+		.row.links {
+			font-size: 16px;
+			font-weight: bold;
+			padding-top: 40px;
+			padding-left: 0;
+
+			a.contact {
+				transition: all .3s;
 			}
 
-			.row.links {
-				font-size: 16px;
-				font-weight: bold;
-				padding-top: 60px; 
+			a.contact:hover {
+				color: orange !important;
+				text-shadow: rgba(255, 165, 0, 0.8) 0 0 30px;
+
+				i {
+					transform: scale(1.2, 1.2);
+				}
+			}
+
+			.col-sm-3 {
+				text-align: left;
 				padding-left: 0;
+				padding-right: 0;
 
-				a.contact {
-					color: orange !important;
+				@media (max-width: @screen-xs-max) {
+					padding-left: 15px;
 				}
 
-				a.contact:hover {
-					color: orange !important;
-				}
-
-				.col-sm-3 {
-					text-align: left;
-					padding-left: 0;
-					padding-right: 0;
-
-					@media (max-width: @screen-xs-max) {
-						padding-left: 15px;
-					}
-
-					@media (min-width: @screen-xs-max) {
-						text-align: center;
-					}
-				}
-
-				.col-sm-3:first-of-type {
-					@media (min-width: @screen-xs-max) {
-						padding-left: 15px;
-						text-align: left;
-					}
-				}
-
-				.col-sm-3:last-of-type {
-					@media (min-width: @screen-xs-max) {
-						padding-right: 15px;
-						text-align: right;
-					}
+				@media (min-width: @screen-xs-max) {
+					text-align: center;
 				}
 			}
 
+			.col-sm-3:first-of-type {
+				@media (min-width: @screen-xs-max) {
+					padding-left: 15px;
+					text-align: left;
+				}
+			}
+
+			.col-sm-3:last-of-type {
+				@media (min-width: @screen-xs-max) {
+					padding-right: 15px;
+					text-align: right;
+				}
+			}
 		}
 	}
-
 }
 
 .tooltip-inner {

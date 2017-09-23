@@ -1,7 +1,13 @@
-﻿mixin contact(title, className, url, tooltip)
-	.col-sm-4
+﻿//- mixin contact(title, className, url, tooltip)
+//- 	.col-sm-4
+//- 		h3
+//- 			a.contact(class="#{className}", href="#{url}", data-toggle="tooltip", data-placement="top", title="#{tooltip}") #{title}
+
+mixin contact(iconName, className, url, tooltip)
+	.col-sm-4.text-center
 		h3
-			a.contact(class="#{className}", href="#{url}", data-toggle="tooltip", data-placement="top", title="#{tooltip}") #{title}	
+			a.contact(class="#{className}" href="#{url}" data-toggle="tooltip" data-placement="top" title="#{tooltip}")
+				i.fa(class="fa-#{iconName}" aria-hidden="true")
 
 .section.contact
 	a.title(name="contact")
@@ -11,19 +17,21 @@
 		| If you have a problem, if no one else can help, and if you can find me, maybe you can hire me...
 
 	.row.links
-		+contact("Email", "email", "", "")
-		+contact("LinkedIn", "linked-in", "http://au.linkedin.com/in/codeandcats", "codeandcats")
-		+contact("GitHub", "github", "https://github.com/codeandcats", "codeandcats")
-		//+contact("Old Blog", "blog", "http://codeandcats.com", "codeandcats.com")
+		//- +contact("Email", "email", "", "")
+		//- +contact("LinkedIn", "linked-in", "http://au.linkedin.com/in/codeandcats", "codeandcats")
+		//- +contact("GitHub", "github", "https://github.com/codeandcats", "codeandcats")
+		+contact("envelope", "email", "", "")
+		+contact("linkedin", "linked-in", "http://au.linkedin.com/in/codeandcats", "codeandcats")
+		+contact("github", "github", "https://github.com/codeandcats", "codeandcats")
 
 script(type='text/javascript').
 	$(function() {
 		var emailAddress = "#{contact.emailAddress}";
-		
+
 		$("a.contact.email").attr({
 			href: "mailto:" + emailAddress,
 			title: emailAddress
 		});
-		
+
 		$("a.contact").tooltip();
 	});
